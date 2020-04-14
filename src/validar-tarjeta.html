@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carro de compras</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!--inicio header-->
+<header>
+<!--logo-->
+	<figure><a href="index.html">
+		<div class=logo>
+
+	<img src="img/hunter-boots-logo.png" alt="hunter-boots-logo" width="150" height="70">
+		</a>
+		</figure>
+	</div>
+		  <!--menu-->
+		  <nav>
+			<a href="index.html">Home</a>
+			  
+			<a href="hombre/hunter-hombre.html">Hombre</a>
+				
+			<a href="nino/nino-hunter.html">Infantil</a>
+
+			<a href="mujer/mujer-hunter.html">Mujer</a>
+	</nav>
+</header>				
+<!--cuenta y carro-->			
+
+<section>
+<h2>Valida tu tarjeta</h2>
+<p>Ingresa los datos de tu tarjetanpara realizar la compra</p><br>
+
+<h3>Tu tarjeta</h3>
+<ul>
+
+	<li><img src="img/card-cmr.png" alt="cmr"></li>  
+
+</ul>
+
+<h4>Total a pagar: $49.990</h4>
+<form action="validar-tarjeta.html" target="_blank">
+	<div class="seccionTarjeta" name="tarjeta">
+		<form name="tarjetaForm">
+			<p>Ingrese digitos de su tarjeta: 
+				<input type="text" name="digitos" id="numTarjeta"
+				placeholder="Escriba aqui los digitos" maxlength="10" minlength="10">
+				<div style="display: none;" id="mensajeError">
+				  <h2 id="error"></h2>
+				  
+				</div>
+			  <input type="button" value="Confirmar" id="confirmarbtn" onclick="validacion()">
+			  <input type="button" value="Volver" id="volverbtn" > 
+		
+		</form><br>
+
+</section>
+<!--inicio footer-->
+<footer>
+
+	<h3>Contáctanos</h3>
+<form action="formulario-enviado.html" target="_blank">
+<div>
+<label> Nombre
+	<input type="text" name="nombre" required placeholder="Escriba su nombre aquí">
+</label>
+</div>
+<div>
+<label> E-mail
+	<input id="e-mail" placeholder="Ingrese su e-mail" name="nombre">
+</label>
+</div>
+<div>
+<label> Mensaje
+	<textarea name="message" rows="10" cols="30"> Escriba su mensaje aquí
+</textarea>
+</label>
+</div>
+<input type="submit" value="Enviar">
+</form>
+<ul>
+		<li><a><strong>Dirección:</strong>Avellaneda 443, Providencia</a></li>
+		<li><a><strong>Teléfono:</strong>223456789</a></li>
+		<li><a><strong>e-mail:</strong>revistamundodigital@hotmail.cl</a></li>
+	</ul>
+<h4>Síguenos en redes sociales</h4>
+	<ul style="list-style-type:none">
+		<li><img src="img/facebook-hunter-boots.png" alt="Facebook Hunter Boots" width="20" height="20"></li>
+		<li><img src="img/youtube-hunter-boots.png" alt="Youtube Hunter Boots" width="40" height="30"></li>
+		<li><img src="img/instagram-hunter-boots.jpeg" alt="Instagram Hunter Boots" width="30" height="20"></li>
+	</ul>
+<!--fin footer-->
+<script src="index.js" type="module"></script>	
+</body>
+</html>

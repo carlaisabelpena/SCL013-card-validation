@@ -8,19 +8,17 @@
 </head>
 <body>
 <!--inicio header-->
-<header class="header2">
-
+<header>
+<!--logo-->
 	<figure><a href="index.html"></a>
-
 		<div class=logo>
-
 	<img src="img/hunter-boots-logo.png" alt="hunter-boots-logo" width="150" height="70">
+		
 		</figure>
 	</div>
-		  <!--logo-->
+
 		  <!--menu-->
 		  <nav>
-		
 			<a href="index.html">Home</a>
 			  
 			<a href="hombre/hunter-hombre.html">Hombre</a>
@@ -28,67 +26,42 @@
 			<a href="nino/nino-hunter.html">Infantil</a>
 
 			<a href="mujer/mujer-hunter.html">Mujer</a>
-		
-	</nav>	
-	</header>
-<!--cuenta y carro-->			
-	
+		</nav>
+</header>
+<!--fin header-->
 
 <section>
 <h2>Carro de compras</h2>
-<p>Has seleccionado el siguiente producto:</p><br>
+<p>Tu compra es la siguiente:</p><br>
 <p><b> Original Tall Rain Woman Boot(1)</b></p>
 
-
 <img src="img/Botas-Hunter-largas-mujer.jpeg" alt="botas-mujer"><br>
-<p> <span class="fondo"><b>Descripción Hunter Original Tall Rain</b><br>
-Por Primera Vez En 1956, La Bota Alta Original Está Hecha A Mano<br>
-28 Piezas Y Se Ha Fabricado En La Horma Original Para Un Ajuste Y Comodidad<br> 
-Excepcionales. Este Icónico Modelo Es La Pieza Clave De La Marca Hunter Original.</span></p>
 
-<ul>
-
-<li type="circle">Características:</li>
-<li type="square">Hecho A Mano</li>
-<li type="square">Impermeable</li>
-<li type="square">Forro Textil</li>
-<li type="square">Goma Natural</li><br>
-</ul>
-
-<h3>Total: $49.990</h3>
 
 <a href="index.html">Seguir comprando</a><br><br>
-<h3>Opciones de pago</h3>
-<p>Aceptamos los siguientes métodos de pago:</p>
+<h3>Medio de pago</h3>
+<p>Tu tarjeta seleccionada es la siguiente:</p>
 <ul>
-<li><img src="img/card-amex.png" alt="american express"></li>
-  <input type="radio" id="cardamex" name="tarjeta" value="30">
 
-<li><img src="img/card-cmr.png" alt="cmr"></li>  
-<input type="radio" id="cardcmr" name="tarjeta" value="30">
-
-<li><img src="img/card-mastercard.png" alt="mastercard"></li> 
-<input type="radio" id="cardmst" name="tarjeta" value="30">
-
-<li><img src="img/card-visa.png" alt="visa"></li> 
-<input type="radio" id="cardvisa" name="tarjeta" value="30">
+	<li><img src="img/card-cmr.png" alt="cmr"></li>  
 
 </ul>
+<h3>Total a pagar: $49.990</h3>
+<form action="validar-tarjeta.html">
+	<input type="submit" value="Confirma tu tarjeta" id=boton>
+</form><br>
 
-	<form action="confirma-compra.html">
-	<input type="submit" value="Confirma tu compra" id=boton>
-	</form>
-	
-
-
+<form action="index.html">
+			<input type="submit" value="Volver al carro" id="boton">
+		</form>
+		
 	
 </section>
-<!--inicio footer-->
 
 	<footer>
 
 		<h3>Contáctanos</h3>
-    <form action="formulario-enviado.html" target="_blank"></form>
+    <form action="formulario-enviado.html" target="_blank">
     <div>
 	<label> Nombre
 		<input type="text" name="nombre" required placeholder="Escriba su nombre aquí">
@@ -106,6 +79,7 @@ Excepcionales. Este Icónico Modelo Es La Pieza Clave De La Marca Hunter Origina
 	</label>
 	</div>
 	<input type="submit" value="Enviar">
+    </form>
     <ul>
 			<li><a><strong>Dirección:</strong>Avellaneda 443, Providencia</a></li>
 			<li><a><strong>Teléfono:</strong>223456789</a></li>
