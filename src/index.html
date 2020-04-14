@@ -1,14 +1,124 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carro de compras</title>
+<link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<!--inicio header-->
+<header class="header2">
+
+	<figure><a href="../index.html"></a>
+
+		<div class=logo>
+
+	<img src="../img/hunter-boots-logo.png" alt="hunter-boots-logo" width="150" height="70">
+		</figure>
+	</div>
+		  <!--logo-->
+		  <!--menu-->
+		  <nav>
+		
+			<a href="../index.html">Home</a>
+			  
+			<a href="../hombre/hunter-hombre.html">Hombre</a>
+				
+			<a href="../nino/nino-hunter.html">Infantil</a>
+
+			<a href="../mujer/mujer-hunter.html">Mujer</a>
+		
+	</nav>	
+	</header>
+<!--cuenta y carro-->			
+	
+
+<section>
+<h2>Carro de compras</h2>
+<p>Has seleccionado el siguiente producto:</p><br>
+<p><b> Original Tall Rain Woman Boot(1)</b></p>
+
+
+<img src="../img/Botas-Hunter-largas-mujer.jpeg" alt="botas-mujer"><br>
+<p> <span class="fondo"><b>Descripción Hunter Original Tall Rain</b><br>
+Por Primera Vez En 1956, La Bota Alta Original Está Hecha A Mano<br>
+28 Piezas Y Se Ha Fabricado En La Horma Original Para Un Ajuste Y Comodidad<br> 
+Excepcionales. Este Icónico Modelo Es La Pieza Clave De La Marca Hunter Original.</span></p>
+
+<ul>
+
+<li type="circle">Características:</li>
+<li type="square">Hecho A Mano</li>
+<li type="square">Impermeable</li>
+<li type="square">Forro Textil</li>
+<li type="square">Goma Natural</li><br>
+</ul>
+
+<h3>Total: $49.990</h3>
+
+<a href="../index.html">Seguir comprando</a><br><br>
+<h3>Opciones de pago</h3>
+<p>Aceptamos los siguientes métodos de pago:</p>
+<ul>
+<li><img src="../img/card-amex.png" alt="american express"></li>
+  <input type="radio" id="cardamex" name="tarjeta" value="30">
+
+<li><img src="../img/card-cmr.png" alt="cmr"></li>  
+<input type="radio" id="cardcmr" name="tarjeta" value="30">
+
+<li><img src="../img/card-mastercard.png" alt="mastercard"></li> 
+<input type="radio" id="cardmst" name="tarjeta" value="30">
+
+<li><img src="../img/card-visa.png" alt="visa"></li> 
+<input type="radio" id="cardvisa" name="tarjeta" value="30">
+
+</ul>
+
+	<form action="../formularios/confirma-compra.html">
+	<input type="submit" value="Confirma tu compra" id=boton>
+	</form>
+	
+
+
+	
+</section>
+<!--inicio footer-->
+
+	<footer>
+
+		<h3>Contáctanos</h3>
+    <form action="../formularios/formulario-enviado.html" target="_blank"></form>
+    <div>
+	<label> Nombre
+		<input type="text" name="nombre" required placeholder="Escriba su nombre aquí">
+	</label>
+	</div>
+	<div>
+	<label> E-mail
+		<input id="e-mail" placeholder="Ingrese su e-mail" name="nombre">
+	</label>
+	</div>
+	<div>
+	<label> Mensaje
+		<textarea name="message" rows="10" cols="30"> Escriba su mensaje aquí
+    </textarea>
+	</label>
+	</div>
+	<input type="submit" value="Enviar">
+    <ul>
+			<li><a><strong>Dirección:</strong>Avellaneda 443, Providencia</a></li>
+			<li><a><strong>Teléfono:</strong>223456789</a></li>
+			<li><a><strong>e-mail:</strong>revistamundodigital@hotmail.cl</a></li>
+		</ul>
+	<h4>Síguenos en redes sociales</h4>
+		<ul style="list-style-type:none">
+		    <li><img src="../img/facebook-hunter-boots.png" alt="Facebook Hunter Boots" width="20" height="20"></li>
+		    <li><img src="../img/youtube-hunter-boots.png" alt="Youtube Hunter Boots" width="40" height="30"></li>
+		    <li><img src="../img/instagram-hunter-boots.jpeg" alt="Instagram Hunter Boots" width="30" height="20"></li>
+		</ul>
+
+<!--fin footer-->
+<script src="index.js" type="module"></script>
+</body>
 </html>
